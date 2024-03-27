@@ -6,33 +6,31 @@
   color: #c8a764;
 }
 
-/* Style général (identique à toutes les pages)*/
-h1 {
-  font-family: "Madimi One", sans-serif;
-  text-align: center;
-  font-size: 5em;
-}
-/* Responsive du titre h1*/
-@media screen and (max-width: 560px) {
-  h1 {
-    font-size: 3.5em;
-  }
-}
-@media screen and (max-width: 370px) {
-  h1 {
-    font-size: 2.5em;
-  }
-}
-@media screen and (max-width: 250px) {
-  h1 {
-    font-size: 1.5em;
-  }
-}
-
 /* Style particulier pour la page "plaquette.html"*/
 /* Style pour le bouton de retour à l'accueil*/
 #goBackToHome {
   margin-top: 10px;
   margin-left: 10px;
   margin-bottom: 10px;
+}
+
+/* Style pour les boutons d'affichages des terrains*/
+.buttonShowTerrain {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  border-bottom: solid #c8a764 5px;
+}
+#imgFullTerrain {
+  width: 50px;
+}
+#imgDemiTerrain {
+  width: 40px;
+}
+
+/* Style pour les boutons d'instructions*/
+
+/* Style pour la zone de dessin*/
+.zoneDraw {
+  text-align: center;
 }
