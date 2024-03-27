@@ -32,11 +32,7 @@ h1 {
 /* Style particulier pour la page "plaquette.html"*/
 /* Style pour le bouton de retour à l'accueil*/
 #goBackToHome {
-  margin-bottom: 20px;
   margin-top: 10px;
   margin-left: 10px;
-  display: flex;
-  align-items: center;
-  text-decoration: none;
-  font-size: 1.3em;
+  margin-bottom: 10px;
 }
