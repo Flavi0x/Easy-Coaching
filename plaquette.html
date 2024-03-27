@@ -42,7 +42,26 @@
     <a href="./hub.html">
       <span id="goBackToHome" class="material-symbols-outlined">home</span>
     </a>
-    <h1>Easy Coaching</h1>
+
+    <!-- Boutons affichage des différents terrains-->
+    <div class="buttonShowTerrain">
+      <button type="button" id="buttonImgFullTerrain">
+        <img id="imgFullTerrain" src="./assets/img/terrain.jpg" />
+      </button>
+
+      <button type="button" id="buttonImgDemiTerrain" onclick="demiTerrain()">
+        <img id="imgDemiTerrain" src="./assets/img/plaquettesIcon.png" />
+      </button>
+    </div>
+
+    <!-- Boutons des instructions-->
+    <div></div>
+
+    <!-- Zone de dessin-->
+    <div class="zoneDraw">
+      <img id="imgGrandTerrain2" src="./assets/img/terrain.jpg" />
+      <img id="imgDemiTerrain2" src="./assets/img/demiTerrain.jpg" />
+    </div>
 
     <script src="./assets/scripts/script-plaquette.js"></script>
   </body>
