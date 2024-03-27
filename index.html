@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <!-- Métadonnées du site-->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Easy Coaching - Identification</title>
+    <link
+      rel="shortcut icon"
+      href="./assets/img/favicon.png"
+      type="image/x-icon"
+    />
+    <!-- Importation de la police d'écriture-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Importation de la deuxième police d'écriture-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Madimi+One&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Importation de la feuille de style (CSS)-->
+    <link
+      href="./assets/styles/styles-index.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+  </head>
+
+  <!-- Corps / Contenu du site-->
+  <body>
+    <h1>Easy Coaching</h1>
+    <!-- Formulaire récupérant les données-->
+    <!-- Première version du formulaire : connexion-->
+    <form id="connexionForm">
+      <label id="identifiant" for="identifiant">
+        Identifiant :
+        <input type="text" id="identifiant" />
+      </label>
+      <label for="motdepasse">
+        Mot de passe :
+        <input type="text" id="motdepasse" />
+      </label>
+
+      <div>
+        <button
+          style="margin-bottom: 15px"
+          type="button"
+          onclick="createAccount()"
+        >
+          Créer un compte
+        </button>
+        <button style="margin-bottom: 15px" type="submit">Valider</button>
+      </div>
+    </form>
+    <!-- Deuxième version du formulaire : création de compte-->
+    <form id="creationAccountForm">
+      <label id="creationIdentifiant" for="creationIdentifiant">
+        Entrez votre identifiant :
+        <input type="text" id="creationIdentifiant" />
+      </label>
+      <label for="creationMotdepasse">
+        Entrez votre mot de passe :
+        <input type="text" id="creationMotdepasse" />
+      </label>
+      <label for="confirmationMotdepasse">
+        Confirmez votre mot de passe :
+        <input type="text" id="confirmationMotdepasse" />
+      </label>
+
+      <div>
+        <button style="margin-bottom: 15px" type="button" onclick="identity()">
+          S'identifier
+        </button>
+        <button style="margin-bottom: 15px" type="submit">
+          Créer votre compte
+        </button>
+      </div>
+    </form>
+
+    <!-- Importation script JS permettant de cacher l'un des deux formulaires lorsqu'on appuie sur un bouton-->
+    <script src="./assets/scripts/script-index.js"></script>
+  </body>
+</html>

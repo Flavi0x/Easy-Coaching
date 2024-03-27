@@ -1,0 +1,116 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  background-color: black;
+  color: #c8a764;
+}
+
+/* Style général (identique à toutes les pages)*/
+h1 {
+  font-family: "Madimi One", sans-serif;
+  text-align: center;
+  font-size: 5em;
+}
+/* Responsive du titre h1*/
+@media screen and (max-width: 1000px) {
+  h1 {
+    font-size: 3.5em;
+  }
+}
+@media screen and (max-width: 370px) {
+  h1 {
+    font-size: 2.5em;
+  }
+}
+@media screen and (max-width: 250px) {
+  h1 {
+    font-size: 1.5em;
+  }
+}
+
+/* Style particulier pour la page "hub.html"*/
+.iconContainer {
+  text-align: center;
+}
+.horizontaleLine {
+  border-bottom: solid 8px #c8a764;
+}
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+nav div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+button {
+  font-size: 0.9em;
+  border: #c8a764 solid 2px;
+  padding: 5px 20px 5px 20px;
+  background-color: #c8a764;
+  color: black;
+  cursor: pointer;
+}
+button:hover {
+  background-color: transparent;
+  color: #c8a764;
+  cursor: pointer;
+}
+button:active {
+  background-color: #c8a764;
+  cursor: pointer;
+}
+/* Responsive des éléments précédents*/
+@media screen and (max-width: 1000px) {
+  .icon {
+    width: 100px;
+    height: 118px;
+    margin-top: -10px;
+  }
+  nav {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+  #plaquettesIcon,
+  #trainingIcon,
+  #systemsIcon,
+  #teamsIcon,
+  #calendarIcon,
+  #settingsIcon {
+    width: 100px;
+  }
+}
+@media screen and (max-width: 600px) {
+  nav {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+}
+@media screen and (max-width: 360px) {
+  .icon {
+    width: 90px;
+    height: 110px;
+    margin-top: -10px;
+  }
+  #plaquettesIcon,
+  #trainingIcon,
+  #systemsIcon,
+  #teamsIcon,
+  #calendarIcon,
+  #settingsIcon {
+    width: 60px;
+  }
+  button {
+    font-size: 0.7em;
+    border: #c8a764 solid 2px;
+    padding: 5px 20px 5px 20px;
+    background-color: #c8a764;
+    color: black;
+    cursor: pointer;
+  }
+}
