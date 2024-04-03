@@ -19,7 +19,7 @@
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  border-bottom: solid #c8a764 5px;
+  border: orange 3px solid;
 }
 #imgFullTerrain {
   width: 50px;
@@ -33,4 +33,60 @@
 /* Style pour la zone de dessin*/
 .zoneDraw {
   text-align: center;
+  border: crimson 3px solid;
+}
+#imgDemiTerrain2 {
+  display: none;
+}
+/* Responsive des éléments précédents*/
+@media screen and (max-width: 975px) {
+  #imgGrandTerrain2 {
+    width: 800px;
+  }
+}
+@media screen and (max-width: 815px) {
+  #imgGrandTerrain2 {
+    width: 700px;
+  }
+}
+@media screen and (max-width: 720px) {
+  #imgGrandTerrain2 {
+    width: 600px;
+  }
+}
+@media screen and (max-width: 615px) {
+  .zoneDraw {
+    transform: rotate(90deg);
+    margin-top: 150px;
+  }
+}
+@media screen and (max-width: 510px) {
+  .zoneDraw {
+    transform: rotate(90deg);
+    margin-top: 100px;
+  }
+}
+@media screen and (max-width: 430px) {
+  .zoneDraw {
+    transform: rotate(90deg);
+    margin-top: 60px;
+  }
+}
+@media screen and (max-width: 350px) {
+  .zoneDraw {
+    transform: rotate(90deg);
+    margin-top: 60px;
+  }
+  #imgGrandTerrain2 {
+    width: 500px;
+  }
+}
+@media screen and (max-width: 350px) {
+  .zoneDraw {
+    transform: rotate(90deg);
+    margin-top: 60px;
+  }
+  #imgGrandTerrain2 {
+    width: 400px;
+  }
 }
