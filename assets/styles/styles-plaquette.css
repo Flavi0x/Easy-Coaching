@@ -19,7 +19,6 @@
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  border: orange 3px solid;
 }
 #imgFullTerrain {
   width: 50px;
@@ -31,11 +30,14 @@
 /* Style pour les boutons d'instructions*/
 
 /* Style pour la zone de dessin*/
-.zoneDraw {
+.zoneDraw,
+#zoneDraw2 {
   text-align: center;
-  border: crimson 3px solid;
 }
-#imgDemiTerrain2 {
+/* #imgDemiTerrain2 {
+  display: none;
+} */
+#imgGrandTerrain2 {
   display: none;
 }
 /* Responsive des éléments précédents*/
@@ -88,5 +90,36 @@
   }
   #imgGrandTerrain2 {
     width: 400px;
+  }
+}
+/* ----- */
+@media screen and (max-width: 615px) {
+  #zoneDraw2 {
+    margin-top: -140px;
+  }
+}
+@media screen and (max-width: 530px) {
+  #imgDemiTerrain2 {
+    width: 450px;
+  }
+}
+@media screen and (max-width: 510px) {
+  #imgDemiTerrain2 {
+    margin-top: 50px;
+  }
+}
+@media screen and (max-width: 460px) {
+  #imgDemiTerrain2 {
+    width: 370px;
+  }
+}
+@media screen and (max-width: 430px) {
+  #imgDemiTerrain2 {
+    margin-top: 90px;
+  }
+}
+@media screen and (max-width: 370px) {
+  #imgDemiTerrain2 {
+    width: 300px;
   }
 }
