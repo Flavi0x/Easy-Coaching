@@ -1,0 +1,86 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  background-color: black;
+  color: #c8a764;
+}
+
+/* Style général (identique à toutes les pages)*/
+h1 {
+  font-family: "Madimi One", sans-serif;
+  text-align: center;
+  font-size: 5em;
+}
+/* Responsive du titre h1*/
+@media screen and (max-width: 1000px) {
+  h1 {
+    font-size: 3.5em;
+  }
+}
+@media screen and (max-width: 370px) {
+  h1 {
+    font-size: 2.5em;
+  }
+}
+@media screen and (max-width: 250px) {
+  h1 {
+    font-size: 1.5em;
+  }
+}
+#goBackToHome {
+  margin-top: 10px;
+  margin-left: 10px;
+  margin-bottom: 10px;
+}
+
+/* Style particulier pour la page "teams.html"*/
+/* Contenu : DIV GÉNÉRAL*/
+.explorerButtons {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 20px;
+  border-bottom: solid 8px #c8a764;
+  padding-bottom: 15px;
+  border-top: solid 8px #c8a764;
+  padding-top: 15px;
+}
+button {
+  font-size: 1.2em;
+  border: #c8a764 solid 2px;
+  padding: 5px 20px 5px 20px;
+  background-color: black;
+  color: black;
+  cursor: pointer;
+}
+button:hover {
+  background-color: transparent;
+  cursor: pointer;
+}
+button:active {
+  background-color: #c8a764;
+  cursor: pointer;
+}
+p {
+  font-family: "Rubik", sans-serif;
+}
+.buttonsContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+/* Responsive des éléments précents*/
+@media screen and (max-width: 1000px) {
+  .explorerButtons {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+}
+@media screen and (max-width: 602px) {
+  p {
+    font-family: "Rubik", sans-serif;
+    font-size: 0.9em;
+  }
+}
