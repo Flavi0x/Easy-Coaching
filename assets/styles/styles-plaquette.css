@@ -27,96 +27,49 @@
   width: 40px;
 }
 
-/* Style pour les boutons d'instructions*/
-
-/* Style pour la zone de dessin*/
-.zoneDraw,
-#zoneDraw2 {
-  text-align: center;
+.separationBoutons {
+  border-bottom: solid 5px #c8a764;
 }
-#imgDemiTerrain2 {
-  display: none;
+/* Style pour les boutons d'instructions*/
+.buttonsInstructionsContainer {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-evenly;
+}
+.instructionsButton {
+  font-size: 1.2em;
+  border: #c8a764 solid 2px;
+  padding: 5px 20px 5px 20px;
+  background-color: black;
+  color: black;
+  cursor: pointer;
+}
+.instructionsButton:hover {
+  background-color: transparent;
+  cursor: pointer;
+}
+.instructionsButton:active {
+  background-color: #c8a764;
+  cursor: pointer;
 }
 /* Responsive des éléments précédents*/
-@media screen and (max-width: 975px) {
-  #imgGrandTerrain2 {
-    width: 800px;
-  }
+
+/* Style pour la zone de dessin*/
+.zoneDraw1Container {
+  margin-top: 50px;
+  text-align: center;
 }
-@media screen and (max-width: 815px) {
-  #imgGrandTerrain2 {
-    width: 700px;
-  }
+.zoneDraw2Container {
+  margin-top: 50px;
+  text-align: center;
 }
-@media screen and (max-width: 720px) {
-  #imgGrandTerrain2 {
-    width: 600px;
-  }
+
+#zoneDraw1 {
+  background-image: url(../img/terrain.jpg);
+  background-repeat: no-repeat;
 }
-@media screen and (max-width: 615px) {
-  .zoneDraw {
-    transform: rotate(90deg);
-    margin-top: 150px;
-  }
-}
-@media screen and (max-width: 510px) {
-  .zoneDraw {
-    transform: rotate(90deg);
-    margin-top: 100px;
-  }
-}
-@media screen and (max-width: 430px) {
-  .zoneDraw {
-    transform: rotate(90deg);
-    margin-top: 60px;
-  }
-}
-@media screen and (max-width: 350px) {
-  .zoneDraw {
-    transform: rotate(90deg);
-    margin-top: 60px;
-  }
-  #imgGrandTerrain2 {
-    width: 500px;
-  }
-}
-@media screen and (max-width: 350px) {
-  .zoneDraw {
-    transform: rotate(90deg);
-    margin-top: 60px;
-  }
-  #imgGrandTerrain2 {
-    width: 400px;
-  }
-}
-/* ----- */
-@media screen and (max-width: 615px) {
-  #zoneDraw2 {
-    margin-top: -140px;
-  }
-}
-@media screen and (max-width: 530px) {
-  #imgDemiTerrain2 {
-    width: 450px;
-  }
-}
-@media screen and (max-width: 510px) {
-  #zoneDraw2 {
-    margin-top: -80px;
-  }
-}
-@media screen and (max-width: 460px) {
-  #imgDemiTerrain2 {
-    width: 370px;
-  }
-}
-@media screen and (max-width: 430px) {
-  #zoneDraw2 {
-    margin-top: -50px;
-  }
-}
-@media screen and (max-width: 370px) {
-  #imgDemiTerrain2 {
-    width: 300px;
-  }
+#zoneDraw2 {
+  background-image: url(../img/demiTerrain.jpg);
+  background-repeat: no-repeat;
+  display: none;
 }
