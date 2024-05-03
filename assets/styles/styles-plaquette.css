@@ -37,7 +37,6 @@
   justify-content: space-evenly;
 }
 .instructionsButton {
-  font-size: 1.2em;
   border: #c8a764 solid 2px;
   padding: 5px 20px 5px 20px;
   background-color: black;
@@ -52,7 +51,6 @@
   background-color: #c8a764;
   cursor: pointer;
 }
-/* Responsive des éléments précédents*/
 
 /* Style pour la zone de dessin*/
 .zoneDraw1Container {
